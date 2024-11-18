@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Test 2 Answer</title>
+        <style>
+            html, body {
+                font-family: "Inter", sans-serif;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                color: #555555;
+                background: #fafafa;
+            }
+            .box{
+                width:600px;
+                height:100px;
+                background:#ebebeb;
+                display: block;
+                margin:50px;
+            }
+            .box2{
+                width:100px;
+                height: 600px;
+                background:#ebebeb;
+                display: block;
+                margin: 5px;        
+            }
+            .box_inside, .box2_inside, .box_inside:hover, .box2_inside:hover{
+                width: 100px;
+                height: 100px;
+                float:left;
+                background-image: url(https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/ZITEUyMUPC/center.png);
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+            }
+            /*
+            assets:
+            RIGHT ARROW: https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/_HHaKozfpP/right.png
+            LEFT ARROW: https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/8QPhsCXgTM/left.png
+            DOWN ARROW: https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/_9XomRMema/down.png
+            UP ARROW: https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/iRD384eYqQ/up.png
+            */
+            .box div:hover {
+                background-image: url(https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/ZITEUyMUPC/center.png);
+            }
+
+            .box div:hover ~ div {
+                background-image: url(https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/8QPhsCXgTM/left.png);
+            }
+
+            .box div:not(:hover) {
+                background-image: url(https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/_HHaKozfpP/right.png);
+            }
+
+    
+            .box2 div:hover {
+                background-image: url(https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/ZITEUyMUPC/center.png);
+            }
+
+            .box2 div:hover ~ div {
+                background-image: url( https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/iRD384eYqQ/up.png);
+            }
+
+            .box2 div:not(:hover) {
+                background-image: url( https://dnlbo7fgjcc7f.cloudfront.net/fulda-5g5sizvzw3ch9mj/image/upload/_9XomRMema/down.png);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <div class="box_inside"></div>
+            <div class="box_inside"></div>
+            <div class="box_inside"></div>
+            <div class="box_inside"></div>
+            <div class="box_inside"></div>
+            <div class="box_inside"></div>
+        </div>
+        <div class="box2">
+            <div class="box2_inside"></div>
+            <div class="box2_inside"></div>
+            <div class="box2_inside"></div>
+            <div class="box2_inside"></div>
+            <div class="box2_inside"></div>
+            <div class="box2_inside"></div>
+        </div>
+    </body>
+</html>
